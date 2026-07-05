@@ -5,7 +5,7 @@ window.databaseFilm = {
     kualitas: "1080p, 720p & 480p",
     diperbarui: "kemarin",
     poster: "../img/bag1/aqua.jpg",
-    videoUrl: "https://youtube.com",
+    videoUrl: "https://dai.ly/x9j57ww",
     sinopsis: "Petualangan baru di dunia sihir yang mendebarkan. Menampilkan kisah kelanjutan para penyihir muda dalam menghadapi ancaman kegelapan baru yang belum pernah ada sebelumnya."
   },
   "batman-vs-superman": {
