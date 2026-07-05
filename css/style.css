@@ -1,0 +1,6 @@
+/* Panggil semua potongan CSS modular ke file utama */
+@import url('modules/global.css');
+@import url('modules/navbar.css');
+@import url('modules/layer1.css');
+@import url('modules/layer2.css');
+@import url('modules/layer3.css');

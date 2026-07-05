@@ -1,0 +1,62 @@
+.navbar {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 7%;
+  border-bottom: 3px solid #ff0000;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 9999;
+}
+.navbar .navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+}
+.navbar .navbar-logo img {
+  height: 40px;
+  width: auto;
+}
+.navbar .navbar-logo span {
+  color: #ff0000;
+}
+.navbar .navbar-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0 15px;
+}
+.navbar .navbar-nav a:hover {
+  color: #ff0000;
+}
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+.navbar .navbar-extra a:hover {
+  color: #ff0000;
+}
+
+/* Tempel di baris paling bawah navbar.css */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 4%;
+  }
+  .navbar .navbar-logo {
+    font-size: 1.4rem;
+  }
+  .navbar .navbar-logo img {
+    height: 30px;
+  }
+  .navbar .navbar-nav {
+    display: none; /* Menyembunyikan menu teks di HP */
+  }
+}
+

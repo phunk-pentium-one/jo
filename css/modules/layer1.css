@@ -1,0 +1,82 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 7%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../img/background/spi.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero .content {
+  max-width: 600px;
+}
+.hero .content h1 {
+  font-size: 3.5rem;
+  color: #fff;
+  line-height: 1.2;
+}
+.hero .content h1 span {
+  color: #ff0000;
+}
+.hero .content p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #ddd;
+}
+.hero .content .cta-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 12px 30px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #ff0000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.hero .content .cta-button:hover {
+  background-color: #cc0000;
+}
+
+/* Tempel di baris paling bawah layer1.css */
+@media (max-width: 768px) {
+  .hero .content h1 {
+    font-size: 2.5rem;
+  }
+  .hero .content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero {
+    padding: 0 4%;
+  }
+  .hero .content h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 4%;
+    
+    background-size: cover !important;
+    
+    /* GANTI MENJADI 30% AGAR ARAHNYA BERBALIK KE KIRI */
+    background-position: 30% center !important; 
+    
+    /* Tips Menyesuaikan:
+       - Jika kurang ke kiri, kecilkan angkanya lagi (misal: 25% atau 20%).
+       - Jika terlalu ke kiri, besarkan angkanya sedikit (misal: 35% atau 40%).
+    */
+  }
+  .hero .content h1 {
+    font-size: 2.2rem; 
+  }
+  .hero .content p {
+    font-size: 1rem;
+  }
+}
