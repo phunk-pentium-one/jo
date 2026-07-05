@@ -1,11 +1,11 @@
 // Gudang Data Film (Database Lokal)
-const databaseFilm = {
+window.databaseFilm = {
   "AQUAMAN": {
     judul: "AQUAMAN (2026)",
     kualitas: "1080p, 720p & 480p",
     diperbarui: "kemarin",
     poster: "../img/bag1/aqua.jpg",
-    videoUrl: "https://youtu.be/lB8ASupNtlw?si=V50Uk86Qsb7Wm20j",
+    videoUrl: "https://youtube.com",
     sinopsis: "Petualangan baru di dunia sihir yang mendebarkan. Menampilkan kisah kelanjutan para penyihir muda dalam menghadapi ancaman kegelapan baru yang belum pernah ada sebelumnya."
   },
   "batman-vs-superman": {
