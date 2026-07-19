@@ -7,7 +7,7 @@ class LayerDuaComponent extends HTMLElement {
           <div class="grid-foto">
             
          <!-- KARTU 1 (Diarahkan ke detail.html dengan ID AQUAMAN) -->
-            <a href="pages/detail.html?id=AQUAMAN" class="card-link">
+            <a href="pages/detail.html?id=aquaman" class="card-link">
               <div class="card-item">
                 <div class="card-thumb">
                   <span class="badge-eps">E8 END</span>

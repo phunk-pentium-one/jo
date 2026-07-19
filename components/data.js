@@ -1,6 +1,6 @@
 // Gudang Data Film (Database Lokal)
 window.databaseFilm = {
-  "AQUAMAN": {
+  "aquaman": {
     judul: "AQUAMAN (2026)",
     kualitas: "1080p, 720p & 480p",
     diperbarui: "kemarin",
