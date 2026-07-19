@@ -6,29 +6,25 @@
   <title id="tab-title">Detail Film</title>
   <link rel="stylesheet" href="../css/style.css">
   
-  <style>
-    /* Desain Kotak Video Player YouTube agar Pas di Laptop & HP */
-    .video-container {
-      width: 100%;
-      max-width: 800px;
-      margin: 0 auto 30px auto;
-      background-color: #000;
-      border: 3px solid #ff0000; /* Bingkai merah khas Phunk Film */
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
-      position: relative;
-      padding-bottom: 56.25%; /* Rumus rasio video 16:9 biar pas otomatis */
-      height: 0;
-    }
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-  </style>
+      <style>
+        /* Desain Kotak Video Player Lokal agar Pas di Laptop & HP */
+        .video-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            background-color: #000;
+            border: 3px solid #ff0000; /* Bingkai merah khas Phunk Film */
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+        }
+        .video-container video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -37,10 +33,15 @@
 
   <main style="margin-top: 120px; padding: 0 7%; color: #fff;">
     
-    <!-- KOTAK YOUTUBE PLAYER UTAMA -->
-    <div class="video-container">
-      <iframe id="film-player" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
+            <!-- KOTAK VIDEO PLAYER UTAMA -->
+        <div class="video-container">
+            <video id="film-player" controls>
+            <source src="../video/aquaman.mp4" type="video/mp4">
+            Browser Anda tidak mendukung pemutar video ini.
+            </video>
+
+        </div>
+
 
     <!-- Judul Film -->
     <h1 id="film-title" style="color: #ff0000; font-style: italic; margin-bottom: 20px;"></h1>
@@ -79,7 +80,7 @@
       document.getElementById('film-quality').innerText = "Kualitas: " + dataFilm.kualitas;
       
       // KUNCI UTAMA YOUTUBE EM-BED: Menyuntikkan link embed ke iframe
-      document.getElementById('film-player').src = dataFilm.videoUrl;
+      // document.getElementById('film-player').src = dataFilm.videoUrl;
     } else {
       document.getElementById('film-title').innerText = "Film Tidak Ditemukan";
     }
