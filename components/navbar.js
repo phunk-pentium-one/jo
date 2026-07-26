@@ -11,11 +11,9 @@ class NavbarComponent extends HTMLElement {
           <img src="${pathPrefix}img/logo/one.jpg" alt="Logo">
           Phunk <span>Film !!!</span>
         </a>
-        <div class="navbar-nav">
-          <a href="${pathPrefix}index.html">Home</a>
-          <a href="#">Tentang Saya</a>
-          <a href="#">Menu</a>
-          <a href="#">Kontak</a>
+        <div class="auth-container">
+        <a href="${pathPrefix}login.html" class="btn btn-login">Login</a>
+        <a href="${pathPrefix}register.html" class="btn btn-register">Register</a>
         </div>
         <div class="navbar-extra">
           <a href="#" id="search"><i class="fa-solid fa-magnifying-glass"></i></a>
